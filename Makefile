@@ -7,3 +7,6 @@ build:
 
 compose:
 	docker-compose up -d
+
+destroy:
+	docker kill nginx
