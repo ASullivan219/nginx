@@ -6,4 +6,5 @@ services:
      - 80:80
      - 443:443
     volumes:
-     - /etc/letsencrypt/live/alex-sullivan.com:/certs/alex-sullivan.com
+      - nginx.conf:/etc/nginx/nginx.conf 
+      - /etc/letsencrypt/live/alex-sullivan.com:/certs/alex-sullivan.com
