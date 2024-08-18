@@ -1,3 +1,4 @@
 # DOCKER FILE
 
-from nginx:1.27.0
+FROM nginx:1.27.0
+COPY index.html /etc/nginx/html/
