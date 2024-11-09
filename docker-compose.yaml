@@ -13,7 +13,7 @@ services:
       - prod-network
 
   newsletter:
-    image: ghcr.io/asullivan/newsletter:latest
+    image: ghcr.io/asullivan219/newsletter:latest
     container_name: newsletter
     hostname: newsletter.prod
     volumes:
