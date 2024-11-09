@@ -18,7 +18,7 @@ services:
     hostname: newsletter.prod
     volumes:
       - type: bind
-        source: ~./newsletter/resources
+        source: ~/newsletter/resources
         target: /app/resources
     networks:
       - prod-network
