@@ -6,22 +6,23 @@ services:
     ports:
      - 80:80
      - 443:443
+     - 22:22
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf 
       - /etc/letsencrypt/:/etc/letsencrypt/
     networks:
       - prod-network
 
-  newsletter:
-    image: ghcr.io/asullivan219/newsletter:latest
-    container_name: newsletter
-    hostname: newsletter.prod
-    volumes:
-      - type: bind
-        source: ~/newsletter/resources
-        target: /app/resources
-    networks:
-      - prod-network
+        #newsletter:
+    #image: ghcr.io/asullivan219/newsletter:latest
+      #container_name: newsletter
+      #hostname: newsletter.prod
+      #volumes:
+      #- type: bind
+        #source: ~/newsletter/resources
+          #target: /app/resources
+          #networks:
+      #- prod-network
 
 networks:
   prod-network:
